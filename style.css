@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navBar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: black;
+}
+
+.navList h1 {
+    color: white;
+    padding-left: 30px;
+    margin-right: 160%;
+}
+
+ul.navList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+li.navItem {
+    margin-right: 50px;
+}
+
+li.navItem a.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navItem a.navLink:hover {
+    color: white;
+}
+
+.headerDiv {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+}
+
+.LeftDiv {
+    width: 60%;
+    padding: 50px 50px 70px 20px;
+}
+
+.LeftDiv h1 {
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 250%;
+    padding-bottom: 20px;
+}
+
+.LeftDiv p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.greenBtn {
+    background-color: rgb(7, 168, 149);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+.RightDiv {
+    padding-top: 50px;
+    width: 40%;
+}
+
+.RightDiv img {
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.productFeature {
+    text-align: center;
+}
+
+.productFeature h1 {
+    margin: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 200%;
+}
+
+.featuresList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(196, 219, 229);
+    margin: 2px auto;
+    height: 70px;
+    width: 200px;
+    padding-top: 20px;
+    border-left: 3px solid green;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px rgb(9, 9, 9);
+}
+
+.users {
+    background-color: rgb(226, 222, 222);
+    margin-top: 50px;
+    height: 400px;
+}
+
+.users h1 {
+    margin: 20px;
+    padding-top: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowcontent {
+    background-color: white;
+    margin-bottom: 20px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    border-left: 3px solid blue;
+}
+
+/* form css */
+.footerandContactForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 228, 228);
+    padding: 20px;
+}
+
+.footerTop {
+    display: flex;
+    flex: 1;
+}
+
+.FooterContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 20px;
+}
+
+.contactForm {
+    width: 500px;
+    padding: 40px 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.contactForm h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.footerCopyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Responsive */
+/* ====== Laptop (Large Screens) ====== */
+@media (max-width: 1200px) {
+    .navList h1 {
+        margin-right: 50px;
+    }
+
+    .featuresList {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 180px;
+        margin: 10px;
+    }
+
+    .contactForm {
+        width: 400px;
+    }
+}
+
+/* ====== Tablet (Medium Screens) ====== */
+@media (max-width: 992px) {
+    .headerDiv {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .LeftDiv,
+    .RightDiv {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .RightDiv img {
+        width: 60%;
+        height: auto;
+    }
+
+    .featuresList {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        width: 160px;
+        margin: 10px;
+    }
+
+    .footerTop {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .FooterContent {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .contactForm {
+        width: 80%;
+    }
+
+    /* Navbar adjustment for tablets */
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    ul.navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li.navItem {
+        margin: 10px 0;
+    }
+
+    .navList h1 {
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+}
+
+/* ====== Mobile (Small Screens) ====== */
+@media (max-width: 600px) {
+    .headerDiv {
+        padding: 10px;
+    }
+
+    .LeftDiv h1 {
+        font-size: 24px;
+    }
+
+    .LeftDiv p {
+        font-size: 16px;
+    }
+
+    .greenBtn {
+        width: 80%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .RightDiv img {
+        width: 80%;
+    }
+
+    .featuresList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .rowcontent {
+        margin: 10px;
+        padding-left: 15px;
+        height: auto;
+        text-align: center;
+    }
+
+    .footerTop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactForm {
+        width: 90%;
+    }
+
+    /* Navbar for small screens */
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    ul.navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li.navItem {
+        margin: 8px 0;
+    }
+
+    .navList h1 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+}
